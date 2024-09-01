@@ -52,7 +52,7 @@ const SignIn = () => {
           /* and other goodies */
         }) => (
           <form onSubmit={handleSubmit}>
-            <div className="flex items-center justify-center flex-col gap-4 py-10 rounded-lg px-8 bg-neutral-100 w-[25vw]">
+            <div className="flex items-center justify-center flex-col gap-4 py-10 rounded-lg px-8 bg-neutral-100 md:w-[25vw]">
               <div className="flex w-full items-center gap-2 flex-col">
                 <input
                   className="border rounded-md border-black p-2 w-full"
