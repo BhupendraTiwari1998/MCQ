@@ -14,7 +14,7 @@ app.use(cors());
 
 const port = 3002;
 
-mongoose.connect('mongodb://localhost:27017/MCQ_App')
+mongoose.connect('mongodb+srv://bhupendrawith2016:bhupendra@cluster0.jcemb.mongodb.net/MCQ_App')
     .then(() => console.log('Connected!'));
 
 app.listen(port, () => {
