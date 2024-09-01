@@ -57,7 +57,7 @@ const Home = () => {
             userID: getUserId,
           };
           axios
-            .post("http://localhost:3002/add-quiz", addquiz)
+            .post("https://mcq-q65b.onrender.com/add-quiz", addquiz)
             .then((res) => {
               console.log(res.data);
               setSubmitting(false);

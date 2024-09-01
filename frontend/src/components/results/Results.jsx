@@ -14,7 +14,7 @@ const Results = () => {
 
   const getResult = () => {
     axios
-      .get(`http://localhost:3002/get-results/${userId}`)
+      .get(`https://mcq-q65b.onrender.com/get-results/${userId}`)
       .then((res) => {
         console.log(res.data.data);
         setResult(res.data.data);  // Set result data
@@ -26,7 +26,7 @@ const Results = () => {
 
   const handleDelete = async () => {
     axios
-      .delete(`http://localhost:3002/delete-results/${userId}`)
+      .delete(`https://mcq-q65b.onrender.com/delete-results/${userId}`)
       .then((res) => {
         console.log(res.data.message);
         setResult(null);  // Clear the result state after deletion

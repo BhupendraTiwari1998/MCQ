@@ -13,7 +13,7 @@ const Quiz = () => {
   // Fetch the quiz data
   useEffect(() => {
     axios
-      .get("http://localhost:3002/get-quiz")
+      .get("https://mcq-q65b.onrender.com/get-quiz")
       .then((res) => {
         console.log(res.data);
         setQuiz(res.data.data);
@@ -46,7 +46,7 @@ const Quiz = () => {
   // Handle submit
   const handleSubmit = (values) => {
     axios
-      .post("http://localhost:3002/create-result", {
+      .post("https://mcq-q65b.onrender.com/create-result", {
         userId,
         responses: values.responses,
       })

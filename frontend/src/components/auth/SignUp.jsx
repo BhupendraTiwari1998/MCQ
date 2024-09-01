@@ -30,7 +30,7 @@ const SignUp = () => {
         }}
         onSubmit={(values, { setSubmitting }) => {
           axios
-            .post("http://localhost:3002/signup", values)
+            .post("https://mcq-q65b.onrender.com/signup", values)
             .then((res) => {
               console.log("sign Up", res);
               notification.success({ message: res.data.message });
